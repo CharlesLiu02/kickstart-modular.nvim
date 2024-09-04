@@ -192,7 +192,16 @@ return {
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         tsserver = {},
-        --
+
+        eslint = {
+          settings = {
+            format = false,
+            codeActionOnSave = {
+              enable = true,
+              mode = 'all',
+            },
+          },
+        },
 
         lua_ls = {
           -- cmd = {...},
